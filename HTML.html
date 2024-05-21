@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Kaviareň</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Online Kaviareň</h1>
+        </header>
+        <form>
+            <label for="coffee-type">Vyberte typ kávy:</label>
+            <select id="coffee-type" name="coffee-type">
+                <option value="espresso">Espresso</option>
+                <option value="latte">Latte</option>
+                <option value="cappuccino">Cappuccino</option>
+            </select>
+
+            <label for="quantity">Počet:</label>
+            <input type="number" id="quantity" name="quantity">
+
+            <fieldset>
+                <legend>Snacky</legend>
+                <label for="kolac">
+                    <input type="checkbox" id="kolac" name="snack" value="kolac"> Koláč
+                </label>
+                <label for="croissant">
+                    <input type="checkbox" id="croissant" name="snack" value="croissant"> Croissant
+                </label>
+            </fieldset>
+
+            <label for="name">Meno:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="address">Adresa:</label>
+            <input type="text" id="address" name="address">
+
+            <label for="notes">Poznámky:</label>
+            <textarea id="notes" name="notes"></textarea>
+
+            <button type="submit">Objednať</button>
+        </form>
+        <footer>
+            <p>Kontaktujte nás na: info@onlinekaviaren.sk</p>
+        </footer>
+    </div>
+</body>
+</html>
